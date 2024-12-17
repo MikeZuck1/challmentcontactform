@@ -9,7 +9,7 @@ export default {
 			customAnotherGreen: 'hsl(169, 82%, 27%)',
 			customTheGreen: 'hsl(186, 15%, 59%)',
 			customDarkGreen: 'hsl(187, 24%, 22%)',
-			errorMessage: 'hsl(0, 66%, 54%)',
+			errorMessage: 'hsl(0, 66%, 54%)'
 		},
 	},
 	plugins: [],
