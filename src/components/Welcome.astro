@@ -1,41 +1,83 @@
 ---
-const obj = {};
+
 ---
 
+<!-- import contact -->
+<script type="module" src="./contact.js"></script>
+
 <main>
-  <div class="container mx-auto max-w-lg mt-20 py-10 px-7 h-auto bg-formBg">
-    <h1 class="">Contact Us</h1>
-    <form action="">
+  <div
+    class="container mx-auto max-w-lg mt-20 py-10 px-7 h-auto rounded-lg bg-formBg"
+  >
+    <h1 class="font-bold text-2xl">Contact Us</h1>
+    <form action="" id="contact-form">
       <!-- FIRST SECTION INPUT -->
       <div class="flex space-x-4 mt-10">
         <div class="">
-          <label for="fname">First name</label><br />
-          <input type="text" name="fname" class="border-2 border-customGreen" />
+          <label for="fname">First name <span>*</span> </label><br />
+          <input
+            type="text"
+            name="fname"
+            class="border rounded-md py-1 border-customGreen"
+          />
         </div>
         <div class="">
-          <label for="fname">Last name</label><br />
-          <input type="text" name="fname" class="border-2 border-customGreen" />
+          <label for="fname">Last name <span>*</span> </label><br />
+          <input
+            type="text"
+            name="fname"
+            class="border rounded-md py-1 border-customGreen"
+          />
         </div>
       </div>
       <!-- SECOND SECTION INPUT -->
       <div class="">
-        <label for="">Email address</label>
+        <label for="">Email address <span>*</span> </label>
         <br />
-        <input type="text" class="border-2 border-customGreen w-full" />
+        <input
+          type="text"
+          class="border border-customGreen w-full rounded-md py-1"
+        />
       </div>
       <!-- THIRD SECTION INPUT -->
       <div class="mt-1">
-        <label for="fname">Type</label><br />
+        <label for="fname">Type <span>*</span></label><br />
         <div class="flex space-x-10">
-          <div class="border-2 pl-2 pr-10 border-customGreen mr-5">
-            <input type="radio" name="fname" class="border-2" />
+          <div
+            class="border pl-2 pr-10 border-customGreen mr-5 rounded-md py-2"
+          >
+            <input type="radio" name="fname" class="border-2 cursor-pointer" />
             <label for="">General Equiry</label>
           </div>
-          <div class="border-2 pl-2 pr-10 border-customGreen">
-            <input type="radio" name="fname" class="border-2" />
+          <div class="border pl-2 pr-10 border-customGreen rounded-md py-2">
+            <input type="radio" name="fname" class="border-2 cursor-pointer" />
             <label for="">Support request</label>
           </div>
         </div>
+      </div>
+      <!-- FOURTH SECTION INPUT -->
+      <div class="mt-2">
+        <label for="">Message <span>*</span> </label>
+        <br />
+        <textarea
+          name="message"
+          id=""
+          class="w-full border border-customGreen rounded-md py-7"></textarea>
+      </div>
+      <!-- FOURTH SECTION INPUT -->
+      <div class="flex mt-7">
+        <input type="checkbox" name="" id="" class="cursor-pointer" />
+        <p class="ml-3">
+          I consent to be contacted by the team. <span>*</span>
+        </p>
+      </div>
+      <!-- BUTTON SECTION INPUT -->
+      <div>
+        <button
+          type="submit"
+          class="mt-6 w-full py-3 rounded-md bg-customAnotherGreen cursor-pointer"
+          >Submit</button
+        >
       </div>
     </form>
   </div>

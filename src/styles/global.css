@@ -1,0 +1,6 @@
+@layer base {
+  input[type="text"],
+  input {
+    @apply rounded px-3 py-2;
+  }
+}
